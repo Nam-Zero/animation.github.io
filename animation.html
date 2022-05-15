@@ -26,6 +26,7 @@
         .box{
             width: 300px;
             height: 300px;
+            max-width: 100%;
             transform-style: preserve-3d;
             transition: 0.5s;
             animation: ani 5s infinite linear;
@@ -54,6 +55,7 @@
         .card{
             height: 300px;
             width: 300px;
+            max-width: 100%;
             position:absolute;
             display: flex;
             justify-content: center;
@@ -104,6 +106,7 @@
             -webkit-text-stroke:5px aqua;
             align-items: center;
             justify-content: center;
+           
         }
         a:before{
             content: "HUỲNHNHƯ";
@@ -127,6 +130,34 @@
                 width: 0;
             }
         }
+        /* Responsive */
+
+        /* PC */
+        @media (min-width:1024px) {
+            
+        }
+        /* Tablet */
+        @media (min-width:740px) and (max-width:1023px) {
+            a {
+            font-size: 100px;
+            }
+            .card{
+            height: 200px;
+            width: 200px;
+            }
+            .box{
+            width: 200px;
+            height: 200px;
+            max-width: 100%;
+            }
+        }
+        /* Mobile */
+        @media (max-width:740px) {
+            a {
+            font-size: 50px;
+        }
+        }
+
     </style>
 </head>
 <body>
